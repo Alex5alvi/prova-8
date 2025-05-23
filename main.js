@@ -127,8 +127,8 @@ window.addEventListener('mousemove', (e) => {
 
 let isFocused = false;
 /////////////////////////////////GESTIONE COLORI CLICK ZONE CLICCABILI///////////////////////////////////////////////////
-
-window.addEventListener('click', () => {
+const bottone = document.querySelector('#bottone');
+bottone.addEventListener('click', () => {
   let clicked = null; // ✅ ora è visibile in tutto il blocco
 
   raycaster.setFromCamera(mouse, camera);
